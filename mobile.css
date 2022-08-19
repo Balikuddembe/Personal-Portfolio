@@ -4,12 +4,12 @@
   border-radius: 0 0 0 9%;
 }
 
-#navbar {
-  display: flex;
-}
-
 #navbar nav:hover {
   cursor: pointer;
+}
+
+#navbar {
+  display: flex;
 }
 
 .menuIcon {
