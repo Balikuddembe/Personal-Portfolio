@@ -1225,10 +1225,22 @@
   .navbar {
     padding: 3% 0;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navbar .logo {
-    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070FF;
+    margin: 3%;
   }
 
   .navbar .icon {
