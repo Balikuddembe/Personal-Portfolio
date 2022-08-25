@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
-@media screen and (max-width: 992px) and (min-width: 601px),
+@media screen and (max-width: 992px) and (min-width: 768px),
   (min-width: 993px) {
   body {
     background: #e5e5e5;
@@ -160,13 +160,13 @@
     display: flex;
     gap: 46px;
     align-items: center;
+    margin-top: 9px;
   }
 
   .card-2 {
     display: flex;
     gap: 46px;
     align-items: center;
-    justify-content: flex-end;
   }
 
   .snapshot {
@@ -596,8 +596,9 @@
     background-color: #fff;
     border-radius: 0 70px 0 0;
     position: absolute;
-    top: 3700px;
+    top: 3400px;
     display: flex;
+    padding-left: 142px;
   }
 
   .container-3 {
@@ -945,7 +946,7 @@
   footer {
     position: absolute;
     left: 0;
-    top: 4515px;
+    top: 4250px;
   }
 
   .container-4 {
@@ -1160,7 +1161,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     background-color: white;
     margin: 0;
