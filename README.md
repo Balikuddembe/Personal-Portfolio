@@ -12,7 +12,7 @@ For this mileston, I've created mobile.html file and mobile.css file in order to
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://balikuddembe.github.io/Personal-Portfolio/)
 
 ### Install this repo
 
