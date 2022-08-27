@@ -40,6 +40,12 @@
 
   .logo {
     padding-top: 17px;
+    transition: 1s;
+  }
+
+  .logo:hover {
+    transform: rotate(180deg);
+    background-color: red;
   }
 
   .navbar .logo {
@@ -83,6 +89,11 @@
     gap: 16px;
   }
 
+  .internal-link a {
+    border: 0.5px;
+    padding: 0.5rem;
+  }
+
   .header-bar li a {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -91,6 +102,12 @@
     line-height: 20px;
     color: #344563;
     text-decoration: none;
+  }
+
+  .internal-link a:hover {
+    color: red;
+    border: 0.5px solid;
+    background-color: #fff;
   }
 
   .home-title {
@@ -372,6 +389,39 @@
     flex: none;
     flex-grow: 0;
     text-decoration: none;
+  }
+
+  .snapshot:hover {
+    border: 1px solid #dfe1e6;
+    transition-property: border-radius;
+    width: 444px;
+    height: 448px;
+  }
+
+  .snapshot-2:hover {
+    border: 1px solid #dfe1e6;
+    transition-property: border-radius;
+    width: 444px;
+    height: 448px;
+  }
+
+  .card-2:hover {
+    border: 1px solid red;
+    border-radius: 24px;
+  }
+
+  .js {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    padding: 9px 9.72px 12px;
+  }
+
+  .js:hover {
+    background-color: #fcc;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
   }
 
   .highlight-2:hover {
@@ -919,10 +969,6 @@
     display: grid;
     grid-template-rows: 20% 80%;
     grid-row-gap: 16px;
-  }
-
-  .js {
-    padding: 9px 9.72px 12px;
   }
 
   .langu {
