@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
-@media screen and (max-width: 992px) and (min-width: 768px), (min-width: 993px) {
+@media screen and (max-width: 992px) and (min-width: 768px),
+  (min-width: 993px) {
   body {
     background: #e5e5e5;
     margin: 0;
@@ -311,7 +312,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #0017e6;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -330,7 +331,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #0013c2;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -368,7 +369,7 @@
     left: 0;
     top: calc(50% - 48px / 2);
     background: #fff;
-    border: 1px solid #7f8cff;
+    border: 1px solid #1a30ff;
     box-sizing: border-box;
     border-radius: 8px;
     order: 3;
@@ -1115,7 +1116,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #001aff;
   }
 
   .highlight-4:hover {
@@ -1279,7 +1280,7 @@
   }
 
   .navbar .logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1518,7 +1519,7 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #7a869a;
+    color: #464f5d;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1619,7 +1620,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #0015d6;
     flex: none;
     order: 0;
     flex-grow: 0;
