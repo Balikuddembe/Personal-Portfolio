@@ -16,7 +16,7 @@
 <body>
     <div class="home-page">
         <header class="navbar">
-            <a href="#" class="logo"><img src="images/MyLogo.png" alt="" /></a>
+            <a href="#" class="logo"><img src="images/MyLogo.png" alt="logo" /></a>
             <div id="icon" class="icon fas fa-bars"></div>
             <nav class="header-bar">
                 <ul class="internal-link">
@@ -256,8 +256,13 @@
                 with it
             </p>
             <form id="form" class="contact-form" action="https://formspree.io/f/xyyokgln" method="post">
+                <label for="name">Name</label>
                 <input id="name" type="text" name="username" placeholder="Full Name" maxlength="30" required />
+
+                <label for="email">Email</label>
                 <input id="email" type="email" name="email-address" placeholder="Email Address" required />
+
+                <label for="message"></label>
                 <textarea id="message" name="comment" placeholder="Write your message here" maxlength="500"
                     required></textarea>
                 <small class="error"></small>
