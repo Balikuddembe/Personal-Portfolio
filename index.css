@@ -1208,9 +1208,11 @@
     border-radius: 10px;
   }
 }
+
 .mobile-menu {
   display: none;
 }
+
 @media (max-width: 576px) {
   body {
     background-color: white;
@@ -1219,41 +1221,31 @@
     width: 375px;
   }
 
-  /* body::before {
-    display: block;
-    content: "";
-    height: 60px;
-  } */
-   .mobile-menu {
+  .mobile-menu {
     display: none;
-  } 
+  }
+
   .open {
-    /* display: flex;
-  
-    background-color: #3c3a39;
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: 1000; */
     display: flex;
     position: absolute;
-left: 0px;
-right: 0px;
-top: 0px;
-bottom: 0px;
-width:100%;
-height:812px;
-z-index: 1000;
-/* Theme 1 / Primary Colors 2 */
-background: #6070FF;
-mix-blend-mode: multiply;
-backdrop-filter: blur(5px);
-}
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 812px;
+    z-index: 1000;
+    background: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+  }
 
-.mobile-menu-close-toggle-container {
-  position: absolute;
-  top: 0.75rem;
-  right: 1.5rem;
-}
+  .mobile-menu-close-toggle-container {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+  }
+
   .mobile-menu-links {
     margin-top: 50px;
     display: flex;
@@ -1265,27 +1257,26 @@ backdrop-filter: blur(5px);
     height: 24px;
     left: 28px;
     right: 68px;
-    top: calc(50% - 24px/2);
-    font-family: 'Poppins';
+    top: calc(50% - 24px / 2);
+    font-family: "poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #fff;
     margin-left: 28px;
     text-decoration: none;
   }
 
   header {
-   padding-top: 30px;
+    padding-top: 30px;
     padding-bottom: 10px;
     width: 100%;
     background: #fff;
     align-items: center;
     box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
-    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -1299,7 +1290,7 @@ backdrop-filter: blur(5px);
   .header-bar {
     list-style: none;
     display: block;
-    position: fixed; 
+    position: fixed;
     top: -120%;
     left: 0;
     background: #6070ff;
