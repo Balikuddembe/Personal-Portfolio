@@ -15,9 +15,25 @@
 
 <body>
     <div class="home-page">
-        <header class="navbar">
+        <!--Toolbar Begins-->
+        <div class="mobile-menu">
+            <div class="mobile-menu-close-toggle-container">
+                <a id="mobile-menu-close-toggle" onclick="toggleClasses()">
+                    <img src="./images/icon_cancel.svg" alt="" class="mobile-menu-close-toggle-image">
+                </a>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="#portfolio" class="mobile-menu-links-items" onclick="toggleClasses()">Portfolio</a>
+                <a href="#aboutMe" class="mobile-menu-links-items" onclick="toggleClasses()">About</a>
+                <a href="#contact" class="mobile-menu-links-items" onclick="toggleClasses()">Contact</a>
+            </div>
+        </div>
+
+        <header class="navbar" id="aboutMe">
+
             <a href="#" class="logo"><img src="images/MyLogo.png" alt="logo" /></a>
-            <div id="icon" class="icon fas fa-bars"></div>
+
+            <div id="icon" class="icon fas fa-bars" onclick="toggleClasses()"></div>
             <nav class="header-bar">
                 <ul class="internal-link">
                     <li><a href="#">Portfolio</a></li>
@@ -270,6 +286,7 @@
             </form>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
