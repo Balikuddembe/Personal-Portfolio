@@ -1243,7 +1243,7 @@
   .mobile-menu-close-toggle-container {
     position: absolute;
     top: 0.75rem;
-    right: 1.5rem;
+    right: 0.5rem;
   }
 
   .mobile-menu-links {
@@ -1848,11 +1848,11 @@
     align-items: center;
   }
 
-  .close-button {
+  .close {
     transform: rotate(45deg);
     cursor: pointer;
     font-size: 40px;
-    color: grey;
+    color: red;
   }
 
   .buttons {
