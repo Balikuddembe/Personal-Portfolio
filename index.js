@@ -1,4 +1,6 @@
 function toggleClasses() {
-    const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-    mobileMenu.classList.toggle('open')
+  const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
+  mobileMenu.classList.toggle('open');
 }
+toggleClasses();
+toggleClasses();
