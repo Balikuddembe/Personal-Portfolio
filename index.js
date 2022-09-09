@@ -81,6 +81,122 @@ cards.forEach((card, index) => {
   addCards(card, index);
 });
 
+const popUpCards = [
+  {
+  title:"Tonic",
+  description:"A daily selection of privately personalized reads; no accounts or sign-ups required.",
+  image:"images/Snapshoot-Portfolio5.png",
+  tech:['CANOPY', 'Back End Dev', '2015'],
+  skills:['html', 'css', 'javascript'],
+  linkLive:"See Live",
+  linkSource:"See Source"
+},
+{
+  image: 'images/c2d.png',
+    title: 'Multi-Post Stories',
+    tech: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends...',
+    skills: ['html', 'css', 'javascript'],
+  linkLive:"See Live",
+  linkSource:"See Source"
+},
+{
+  image: 'images/c3d.png',
+    title: 'Facebook 360',
+    tech: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends...',
+    skills: ['html', 'css', 'javascript'],
+    linkLive:"See Live",
+  linkSource:"See Source"
+},
+{
+  image: 'images/c4d.png',
+    title: 'Uber Navigation',
+    tech: ['Uber', 'Lead Developer', '2015'],
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    skills: ['html', 'css', 'javascript'],
+    linkLive:"See Live",
+    linkSource:"See Source"
+},
+]
+
+const btns = document.querySelectorAll('.work button')
+const bgModal = document.querySelector('.bg-modal')
+
+
+
+function popUpWindow(index) {
+  const {
+    title, tech, description, skills, image,
+  } = popUpCards[index];
+
+  const techHtml = tech.map(
+      (i) => `
+      <li class="canopy">${i}</li>
+      ${
+  i === tech[tech.length - 1]
+    ? ''
+    : '<li><img src="images/Counter.png" alt="counter" /></li>'
+}
+    `,
+    )
+    .join('');
+
+  const skillsHtml = skills
+    .map((s) => `<li class="highlight font-1">${s}</li>`)
+    .join('');
+
+  bgModal.innerHTML = `
+  <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="tonic">${title}</h3>
+          <span class="close-button">+</span>
+        </div>
+        <ul class="ul-box1 flex0">
+          ${techHtml}
+        </ul>
+        <a href="#"
+          ><img src="${image}" alt="Snapshoot-Portfolio" class="snapshot"
+        /></a>
+        <div class="flex-99">
+          <div class="flex-98">
+            <p class="description-2 flex0">
+            ${description}
+            </p>
+          </div>
+          <div>
+            <ul class="ul-box2 flex0">
+             ${skillsHtml}
+            </ul>
+            <hr class="solid-1">
+            <div class="buttons">
+              <button type="button" class="live-btn">
+                see live
+                <i class="fas fa-check"></i>
+              </button>
+              <button type="button" class="live-btn">
+                see source
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  `;
+  bgModal.style.display = 'flex';
+  document.querySelector('.close-button').addEventListener('click', () => {
+    document.querySelector('.bg-modal').style.display = 'none';
+  });
+}
+
+btns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    popUpWindow(index);
+  });
+});
+
+
+
 // form validation
 
 const form = document.getElementById('form');
