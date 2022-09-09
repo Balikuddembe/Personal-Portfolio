@@ -83,47 +83,45 @@ cards.forEach((card, index) => {
 
 const popUpCards = [
   {
-  title:"Tonic",
-  description:"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  image:"images/Snapshoot-Portfolio5.png",
-  tech:['CANOPY', 'Back End Dev', '2015'],
-  skills:['html', 'css', 'javascript'],
-  linkLive:"See Live",
-  linkSource:"See Source"
-},
-{
-  image: 'images/c2d.png',
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'images/Snapshoot-Portfolio5.png',
+    tech: ['CANOPY', 'Back End Dev', '2015'],
+    skills: ['html', 'css', 'javascript'],
+    linkLive: 'See Live',
+    linkSource: 'See Source',
+  },
+  {
+    image: 'images/c2d.png',
     title: 'Multi-Post Stories',
     tech: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends...',
     skills: ['html', 'css', 'javascript'],
-  linkLive:"See Live",
-  linkSource:"See Source"
-},
-{
-  image: 'images/c3d.png',
+    linkLive: 'See Live',
+    linkSource: 'See Source',
+  },
+  {
+    image: 'images/c3d.png',
     title: 'Facebook 360',
     tech: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends...',
     skills: ['html', 'css', 'javascript'],
-    linkLive:"See Live",
-  linkSource:"See Source"
-},
-{
-  image: 'images/c4d.png',
+    linkLive: 'See Live',
+    linkSource: 'See Source',
+  },
+  {
+    image: 'images/c4d.png',
     title: 'Uber Navigation',
     tech: ['Uber', 'Lead Developer', '2015'],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     skills: ['html', 'css', 'javascript'],
-    linkLive:"See Live",
-    linkSource:"See Source"
-},
-]
+    linkLive: 'See Live',
+    linkSource: 'See Source',
+  },
+];
 
-const btns = document.querySelectorAll('.work button')
-const bgModal = document.querySelector('.bg-modal')
-
-
+const btns = document.querySelectorAll('.work button');
+const bgModal = document.querySelector('.bg-modal');
 
 function popUpWindow(index) {
   const {
@@ -131,7 +129,7 @@ function popUpWindow(index) {
   } = popUpCards[index];
 
   const techHtml = tech.map(
-      (i) => `
+    (i) => `
       <li class="canopy">${i}</li>
       ${
   i === tech[tech.length - 1]
@@ -139,7 +137,7 @@ function popUpWindow(index) {
     : '<li><img src="images/Counter.png" alt="counter" /></li>'
 }
     `,
-    )
+  )
     .join('');
 
   const skillsHtml = skills
@@ -194,8 +192,6 @@ btns.forEach((btn, index) => {
     popUpWindow(index);
   });
 });
-
-
 
 // form validation
 
