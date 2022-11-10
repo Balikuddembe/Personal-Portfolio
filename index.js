@@ -8,6 +8,14 @@ toggleClasses();
 // pop window
 const cards = [
   {
+    image: 'images/toDoList.png',
+    title: 'To Do List',
+    tech: ['Microverse', 'Full Stack Dev', '2022'],
+    description: 'To-Do List is a simple yet very helpful application to keep track of your daily/weekly activities.',
+    skills: ['html', 'css', 'javascript', 'webpack', 'linter'],
+  },
+
+  {
     image: 'images/Snapshoot-Portfolio5.png',
     title: 'Tonic',
     tech: ['CANOPY', 'Back End Dev', '2015'],
@@ -83,6 +91,16 @@ cards.forEach((card, index) => {
 
 const popUpCards = [
   {
+    image: 'images/toDoList.png',
+    title: 'To Do List',
+    tech: ['Microverse', 'Full Stack Dev', '2022'],
+    description: 'To-Do List is a simple yet very helpful application to keep track of your daily/weekly activities.',
+    skills: ['html', 'css', 'javascript', 'webpack', 'linter'],
+    linkLive: 'See Live',
+    linkSource: 'See Source',
+  },
+
+  {
     title: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'images/Snapshoot-Portfolio5.png',
@@ -125,7 +143,7 @@ const bgModal = document.querySelector('.bg-modal');
 
 function popUpWindow(index) {
   const {
-    title, tech, description, skills, image,
+    title, tech, description, skills, image, linkLive, linkSource
   } = popUpCards[index];
 
   const techHtml = tech.map(
@@ -144,6 +162,8 @@ function popUpWindow(index) {
     .map((s) => `<li class="highlight font-1">${s}</li>`)
     .join('');
 
+
+    
   bgModal.innerHTML = `
   <div class="modal-content">
         <div class="modal-header">
@@ -168,14 +188,16 @@ function popUpWindow(index) {
             </ul>
             <hr class="solid-1">
             <div class="buttons">
+            <a href="https://balikuddembe.github.io/ToDo-List-using-ES6-and-Webpack/dist/index.html">
               <button type="button" class="live-btn">
                 see live
                 <i class="fas fa-check"></i>
-              </button>
+              </button></a>
+              <a href="https://github.com/Balikuddembe/ToDo-List-using-ES6-and-Webpack">
               <button type="button" class="live-btn">
                 see source
                 <i class="fab fa-github"></i>
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
